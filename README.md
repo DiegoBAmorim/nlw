@@ -39,4 +39,4 @@ Um Component Widget para feedback que pode ser utilizado em qualquer site.
 
 ---
 
-Feito com ♥ by [Igor Thierry](https://www.linkedin.com/in/igorthierry/)
+Feito com ♥ by [Diego Barbosa](https://www.linkedin.com/in/diego-barbosa-07b632195/)
