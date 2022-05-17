@@ -11,7 +11,7 @@
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-2ecc71">
 
-  <a href="https://github.com/IgorThierry">
+  <a href="https://github.com/DiegoBAmorim">
     <img alt="Made by Diego Barbosa" src="https://img.shields.io/badge/Made%20by-Diego%20Amorim-2ecc71">
   </a>
 
