@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { ArrowLeft } from 'phosphor-react-native'
 import { captureScreen } from 'react-native-view-shot'
 import * as FileSystem from 'expo-file-system'
-import { View, TextInput, Image, Text, TouchableOpacity } from 'react-native'
+import { View, TextInput, Image, Text, TouchableOpacity, Keyboard } from 'react-native'
 
 import { Button } from '../Button'
 import { FeedbackType } from '../Widget'
@@ -28,7 +28,7 @@ const Form: React.FC<Props> = ({
   const [comment, setComment] = useState('')
   const [screenshot, setScreenshot] = useState<string | null>(null)
 
-  const feedbackInfo = feedbackTypes[feedbackType]
+  const feedbackInfo = feedbackTypes[feedbackType];
 
   const handleScreenshot = () => {
     captureScreen({
@@ -92,6 +92,7 @@ const Form: React.FC<Props> = ({
         onChangeText={setComment}
         placeholder="Algo não está funcionando bem? Queremos corrigir. Conte com detalhes o que está acontecendo..."
         placeholderTextColor={theme.colors.text_secondary}
+        onSubmitEditing={() => Keyboard.dismiss()}
       />
 
       <View style={styles.footer}>
